@@ -377,6 +377,12 @@ form#product-form {
 #product-form button#next {
     width:100%;
 }
+.form-btn button.btn.btn-info {
+    border-radius:50%;
+}
+.form-btn .btn-info.collapsed i:before{
+    content:"\f067";
+}
 .step1 {
   display: block;
 }
