@@ -1,165 +1,181 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<meta charset="UTF-8"> 
-	<title>Jewellery Shop</title> 
-	<!-- INCLUDE CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- INCLUDING JQUERY-->
-  <script src="script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- INCLUDING EXTERNAL JS-->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head> 
-<body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="mainnav">
-  <a class="navbar-brand" href="#">
-    <img class="brand-logo-nav" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739344/samples/ecommerce/logo_kikn7b.png">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Men</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Women</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-         
-    </ul>
-  </div>  
-</nav>
-<div class="text-center top-banner" style="margin-bottom:0">
-  <section><p class="covid-update">Show us your vaccination certificate and get special 25% off</p></section>
-  <section class="image-text">
-    <img class="banner-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739579/samples/ecommerce/banner.jpg">
-    <div class="imageOverlay">
-      <h1>100% Genuine And Trustworthy</h1>
-      <p><a href="#benefits"><i class="fa fa-arrow-circle-down"></i></a></p>
-    </div>
-  </section>
-</div>
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 col-lg-12 col-md-12" id="benefits">
-      <div class="benefits-card">
-  <div class="benefit-text"><p><i class="fa fa-check-circle"></i></p><p>Official Fashion Store</p></div>
-  <div class="overlay">
-    <div class="text"><p>
-    Lorem ipsum dolor sit amet</p>
-</div>
-  </div>
-</div>
-<div class="benefits-card">
-  <div class="benefit-text"><p><i class="fa fa-check-circle"></i></p><p>Easy Returns</p></div>
-  <div class="overlay">
-    <div class="text"><p>
-    Lorem ipsum dolor sit amet</p>
-</div>
-  </div>
-</div>
-<div class="benefits-card">
-  <div class="benefit-text"><p><i class="fa fa-check-circle"></i></p><p>Free Shipping</p></div>
-  <div class="overlay">
-    <div class="text"><p>
-    Lorem ipsum dolor sit amet</p>
-</div>
-  </div>
-</div>
-
-    </div>
-  </div>
-  <div class="row product-heading">
-    <h2>JewellerShop Collections</h2>
-  </div>
-    <div class="row product-list">
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747390/samples/ecommerce/bangle_af7zvf.jpg" alt="jewellery">
-        <div class="card-body">
-          <h4 class="card-title">Gold Bangle</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Category: Female</h6>
-          <div class="options d-flex flex-fill">
-             <select class="custom-select mr-1">
-                <option selected>Carat</option>
-            </select>
-            <select class="custom-select ml-1">
-                <option selected>Size</option>
-            </select>
-          </div>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">$125</h5></div>
-             <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-          </div>
-        </div>
+   <head>
+      <meta charset="UTF-8">
+      <title>Jewellery Shop</title>
+      <!-- INCLUDE CSS -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- INCLUDING JQUERY-->
+      <script src="script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- INCLUDING EXTERNAL JS-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="mainnav">
+         <a class="navbar-brand" href="#">
+         <img class="brand-logo-nav" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739344/samples/ecommerce/logo_kikn7b.png">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="text-center top-banner" style="margin-bottom:0">
+         <section>
+            <p class="covid-update">Show us your vaccination certificate and get special 25% off</p>
+         </section>
+         <section class="image-text">
+            <img class="banner-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739579/samples/ecommerce/banner.jpg">
+            <div class="imageOverlay">
+               <h1>100% Genuine And Trustworthy</h1>
+               <p><a href="#benefits"><i class="fa fa-arrow-circle-down"></i></a></p>
+            </div>
+         </section>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747402/samples/ecommerce/ring_w4oezj.jpg" alt="Jewellery">
-        <div class="card-body">
-          <h4 class="card-title">Diamond Ring</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Category: Female</h6>
-          <div class="options d-flex flex-fill">
-             <select class="custom-select mr-1">
-                <option selected>Carat</option>
-            </select>
-            <select class="custom-select ml-1">
-                <option selected>Size</option>
-            </select>
-          </div>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">$125</h5></div>
-             <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-          </div>
-        </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12 col-lg-12 col-md-12" id="benefits">
+               <div class="benefits-card">
+                  <div class="benefit-text">
+                     <p><i class="fa fa-check-circle"></i></p>
+                     <p>Official Fashion Store</p>
+                  </div>
+                  <div class="overlay">
+                     <div class="text">
+                        <p>
+                           Lorem ipsum dolor sit amet
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="benefits-card">
+                  <div class="benefit-text">
+                     <p><i class="fa fa-check-circle"></i></p>
+                     <p>Easy Returns</p>
+                  </div>
+                  <div class="overlay">
+                     <div class="text">
+                        <p>
+                           Lorem ipsum dolor sit amet
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="benefits-card">
+                  <div class="benefit-text">
+                     <p><i class="fa fa-check-circle"></i></p>
+                     <p>Free Shipping</p>
+                  </div>
+                  <div class="overlay">
+                     <div class="text">
+                        <p>
+                           Lorem ipsum dolor sit amet
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row product-heading">
+            <h2>JewellerShop Collections</h2>
+         </div>
+         <div class="row product-list">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+               <div class="card">
+                  <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747390/samples/ecommerce/bangle_af7zvf.jpg" alt="jewellery">
+                  <div class="card-body">
+                     <h4 class="card-title">Gold Bangle</h4>
+                     <h6 class="card-subtitle mb-2 text-muted">Category: Female</h6>
+                     <div class="options d-flex flex-fill">
+                        <select class="custom-select mr-1">
+                           <option selected>Carat</option>
+                        </select>
+                        <select class="custom-select ml-1">
+                           <option selected>Size</option>
+                        </select>
+                     </div>
+                     <div class="buy d-flex justify-content-between align-items-center">
+                        <div class="price text-success">
+                           <h5 class="mt-4">$125</h5>
+                        </div>
+                        <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+               <div class="card">
+                  <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747402/samples/ecommerce/ring_w4oezj.jpg" alt="Jewellery">
+                  <div class="card-body">
+                     <h4 class="card-title">Diamond Ring</h4>
+                     <h6 class="card-subtitle mb-2 text-muted">Category: Female</h6>
+                     <div class="options d-flex flex-fill">
+                        <select class="custom-select mr-1">
+                           <option selected>Carat</option>
+                        </select>
+                        <select class="custom-select ml-1">
+                           <option selected>Size</option>
+                        </select>
+                     </div>
+                     <div class="buy d-flex justify-content-between align-items-center">
+                        <div class="price text-success">
+                           <h5 class="mt-4">$125</h5>
+                        </div>
+                        <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+               <div class="card">
+                  <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747373/samples/ecommerce/ring2_o6edui.jpg" alt="jewellery">
+                  <div class="card-body">
+                     <h4 class="card-title">Diamond Ring</h4>
+                     <h6 class="card-subtitle mb-2 text-muted">Category: Male</h6>
+                     <div class="options d-flex flex-fill">
+                        <select class="custom-select mr-1">
+                           <option selected>Carat</option>
+                        </select>
+                        <select class="custom-select ml-1">
+                           <option selected>Size</option>
+                        </select>
+                     </div>
+                     <div class="buy d-flex justify-content-between align-items-center">
+                        <div class="price text-success">
+                           <h5 class="mt-4">$125</h5>
+                        </div>
+                        <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row show-more">
+            <a href="productDemo.html" class="btn show-more-button">Shop the full collection</a>
+         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621747373/samples/ecommerce/ring2_o6edui.jpg" alt="jewellery">
-        <div class="card-body">
-          <h4 class="card-title">Diamond Ring</h4>
-          <h6 class="card-subtitle mb-2 text-muted">Category: Male</h6>
-          <div class="options d-flex flex-fill">
-             <select class="custom-select mr-1">
-                <option selected>Carat</option>
-            </select>
-            <select class="custom-select ml-1">
-                <option selected>Size</option>
-            </select>
-          </div>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">$125</h5></div>
-             <a href="productDemo.html" class="btn btn-danger mt-3 cart-button"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row show-more">
-    <a href="productDemo.html" class="btn show-more-button">Shop the full collection</a>
-  </div>
-  
-</div>
-
-<footer class="jumbotron text-center footer">
-  <p>Footer</p>
-  <div class="social-links col-sm-12 col-lg-12 col-md-12"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a></div>
-</footer>
-</body>
+      <footer class="jumbotron text-center footer">
+         <p>Footer</p>
+         <div class="social-links col-sm-12 col-lg-12 col-md-12"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </div>
+      </footer>
+   </body>
 </html>
