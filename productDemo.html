@@ -1,402 +1,401 @@
 <!DOCTYPE html>
 <html>
-<head> 
-	<meta charset="UTF-8"> 
-	<title>Jewellery Shop</title> 
-	<!-- INCLUDE CSS -->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- INCLUDING JQUERY-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- INCLUDING EXTERNAL JS-->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <script src="script.js"></script>
-
-</head> 
-<body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="mainnav">
-  <a class="navbar-brand" href="#">
-    <img class="brand-logo-nav" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739344/samples/ecommerce/logo_kikn7b.png">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Men</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Women</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-         
-    </ul>
-  </div>  
-</nav>
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
-            <div id='cam'>
-          <a class="btn btn-block" id="open"><i class="fa fa-phone"></i><span>Talk To Seller</span></a>
-          
-            <div class="">
-              <div id="wrap">
-              <div id='cont'>
-                <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1604734291/webpage%20project/testimonials-2_uojr0h.jpg" class="seller-image">
-                <span class="seller-name">Shilpa</span>
-                <span class="caller-name">Call With Shilpa</span>
-                <div id="vid" class='camvideo' >
-              <video id='video'></video>
-                </div>
-                <div id="capture" class='camvideo'>
-              <canvas id='canvas'></canvas>
-              <canvas id='blank' style='display:none;'></canvas>
-                </div>
-                <div id="control">
-                  <div class="container">
-                  <div class="row buttons">
-                    <div class="muteAudio"><a id='mute-audio' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/mic-on_jxg6mj.svg"></a></div>
-                    <div class="muteVudio"><a id='mute-video' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758208/assets/camera-on_fevjwu.svg"></a></div>
-                    <div class="close"><a id='closeButton' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758204/assets/end-call_zgt1hw.svg"></a></div>
+   <head>
+      <meta charset="UTF-8">
+      <title>Jewellery Shop</title>
+      <!-- INCLUDE CSS -->
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- INCLUDING JQUERY-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- INCLUDING EXTERNAL JS-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="mainnav">
+         <a class="navbar-brand" href="#">
+         <img class="brand-logo-nav" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621739344/samples/ecommerce/logo_kikn7b.png">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Men</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Women</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+               <div id='cam'>
+                  <a class="btn btn-block" id="open"><i class="fa fa-phone"></i><span>Talk To Seller</span></a>
+                  <div class="">
+                     <div id="wrap">
+                        <div id='cont'>
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1604734291/webpage%20project/testimonials-2_uojr0h.jpg" class="seller-image">
+                           <span class="seller-name">Shilpa</span>
+                           <span class="caller-name">Call With Shilpa</span>
+                           <div id="vid" class='camvideo' >
+                              <video id='video'></video>
+                           </div>
+                           <div id="capture" class='camvideo'>
+                              <canvas id='canvas'></canvas>
+                              <canvas id='blank' style='display:none;'></canvas>
+                           </div>
+                           <div id="control">
+                              <div class="container">
+                                 <div class="row buttons">
+                                    <div class="muteAudio"><a id='mute-audio' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/mic-on_jxg6mj.svg"></a></div>
+                                    <div class="muteVudio"><a id='mute-video' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758208/assets/camera-on_fevjwu.svg"></a></div>
+                                    <div class="close"><a id='closeButton' class='btn btn-block'><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758204/assets/end-call_zgt1hw.svg"></a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                    </div>
-                </div>
-              </div>
-              </div>
+               </div>
             </div>
-          
-        </div>
-</div>
-
-<div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 form-div">
-  <div id="form-button">
-    <div class="form-logo">
-      <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758204/assets/kraya-logo_rzd2yu.svg">
-    </div>
-  <div class="form-btn"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#product-form">Buy Now</button></div></div>
-  <form id="product-form" class="collapse show">
-    <div class="step1">
-      <div class="form-header">
-            <div class="header-image header-border">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Product Details</p>
-            <p class="number">1</p>
-          </div>
-            <div class="header-image header-border">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-              <p>Customer Details</p>
-              <p class="number">2</p>
+            <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12 form-div">
+               <div id="form-button">
+                  <div class="form-logo">
+                     <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758204/assets/kraya-logo_rzd2yu.svg">
+                  </div>
+                  <div class="form-btn"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#product-form">Buy Now</button></div>
+               </div>
+               <form id="product-form" class="collapse show">
+                  <div class="step1">
+                     <div class="form-header">
+                        <div class="header-image header-border">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Product Details</p>
+                           <p class="number">1</p>
+                        </div>
+                        <div class="header-image header-border">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Customer Details</p>
+                           <p class="number">2</p>
+                        </div>
+                        <div class="header-image">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Payment Info</p>
+                           <p class="number">3</p>
+                        </div>
+                     </div>
+                     <div class="form-body">
+                        <p>Product-1</p>
+                        <div class="form-group">
+                           <label for="product-id">Model/Product Id :</label>
+                           <input type="text" class="form-control" id="product-id" placeholder="216780356" name="product-id">
+                        </div>
+                        <div class="form-group">
+                           <label for="product-type">Product Type :</label>
+                           <input type="text" class="form-control" id="product-type" name="product-type">
+                        </div>
+                        <div class="form-group">
+                           <label for="purity">Purity  :</label>
+                           <input type="text" class="form-control" id="purity" name="purity">
+                        </div>
+                        <div class="form-group">
+                           <label for="product-id">Weight :</label>
+                           <input type="text" class="form-control" id="weight"  name="weight">
+                        </div>
+                        <p>Add More Products +</p>
+                     </div>
+                     <div class="form-total">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5>Order Summary</h5>
+                              <table class="table table-borderless">
+                                 <tbody>
+                                    <tr>
+                                       <td>Discount</td>
+                                       <td>6993.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Taxable Amount</td>
+                                       <td>198654.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>SGST/td>
+                                       <td>1</td>
+                                    </tr>
+                                    <tr>
+                                       <td>CGST</td>
+                                       <td>1</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Grand Total</td>
+                                       <td>Rs. 19,326.00</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="step2">
+                     <div class="form-header">
+                        <div class="header-image header-border header-border-active">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Product Details</p>
+                           <p class="number">1</p>
+                        </div>
+                        <div class="header-image header-border">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Customer Details</p>
+                           <p class="number">2</p>
+                        </div>
+                        <div class="header-image">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Payment Info</p>
+                           <p class="number">3</p>
+                        </div>
+                     </div>
+                     <div class="form-body">
+                        <div class="form-group">
+                           <label for="name">Name :</label>
+                           <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="form-group">
+                           <label for="email">Email Id :</label>
+                           <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                           <label for="contact">Phone No.  :</label>
+                           <input type="number" class="form-control" id="contact" name="contact">
+                        </div>
+                        <div class="form-group">
+                           <label for="pan">Pan Or Aadhar :</label>
+                           <input type="text" class="form-control" id="pan"  name="pan">
+                        </div>
+                        <h5>Address Details : </h5>
+                        <div class="form-group">
+                           <label for="address">Address :</label>
+                           <input type="text" class="form-control" id="address"  name="address">
+                        </div>
+                        <div class="form-group">
+                           <label for="city">City :</label>
+                           <input type="text" class="form-control" id="city"  name="city">
+                        </div>
+                        <div class="form-group">
+                           <label for="pincode">PIN Code :</label>
+                           <input type="text" class="form-control" id="pincode"  name="pincode">
+                        </div>
+                        <div class="grandTotal">
+                           <table class="table table-borderless">
+                              <tbody>
+                                 <tr>
+                                    <td>Grand Total</td>
+                                    <td>Rs. 19,326.00</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="step3">
+                     <div class="form-header">
+                        <div class="header-image header-border header-border-active">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Product Details</p>
+                           <p class="number">1</p>
+                        </div>
+                        <div class="header-image header-border header-border-active">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Customer Details</p>
+                           <p class="number">2</p>
+                        </div>
+                        <div class="header-image">
+                           <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
+                           <p>Payment Info</p>
+                           <p class="number">3</p>
+                        </div>
+                     </div>
+                     <div class="form-body">
+                        <p>Choose Payment Method : </p>
+                        <div class="card">
+                           <table class="table table-borderless">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div class="radio">
+                                          <input type="radio" name="payment-radio">
+                                       </div>
+                                    </td>
+                                    <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758207/assets/cash-on-delivery_zwk9yl.svg"></td>
+                                    <td>Cash On Delivery</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="card">
+                           <table class="table table-borderless">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div class="radio">
+                                          <input type="radio" name="payment-radio">
+                                       </div>
+                                    </td>
+                                    <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758205/assets/credit-card-two_anwwkd.svg"></td>
+                                    <td>Online Banking</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <div class="card">
+                           <table class="table table-borderless">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div class="radio">
+                                          <input type="radio" name="payment-radio">
+                                       </div>
+                                    </td>
+                                    <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758201/assets/store-pick_ctxnv5.png"></td>
+                                    <td>Pickup From Store</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="form-total">
+                        <div class="card">
+                           <div class="card-body">
+                              <h5>Order Summary</h5>
+                              <table class="table table-borderless">
+                                 <tbody>
+                                    <tr>
+                                       <td>Discount</td>
+                                       <td>6993.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Taxable Amount</td>
+                                       <td>198654.0</td>
+                                    </tr>
+                                    <tr>
+                                       <td>SGST/td>
+                                       <td>1</td>
+                                    </tr>
+                                    <tr>
+                                       <td>CGST</td>
+                                       <td>1</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Grand Total</td>
+                                       <td>Rs. 19,326.00</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="step4">
+                     <div>
+                        <p><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758202/assets/reveived-icon_jjigld.svg"></p>
+                        <p>Thanks For the confirmation, we have sent payment link to aishwarya@gmail.com</p>
+                     </div>
+                  </div>
+                  <button id="next" class="btn btn-info">Subit and go to next step</button>
+               </form>
             </div>
-            <div class="header-image">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Payment Info</p>
-            <p class="number">3</p>
-          </div>
-        </div>
-        <div class="form-body">
-          <p>Product-1</p>
-    <div class="form-group">
-      <label for="product-id">Model/Product Id :</label>
-      <input type="text" class="form-control" id="product-id" placeholder="216780356" name="product-id">
-    </div>
-    <div class="form-group">
-      <label for="product-type">Product Type :</label>
-      <input type="text" class="form-control" id="product-type" name="product-type">
-    </div>
-    <div class="form-group">
-      <label for="purity">Purity  :</label>
-      <input type="text" class="form-control" id="purity" name="purity">
-    </div>
-    <div class="form-group">
-      <label for="product-id">Weight :</label>
-      <input type="text" class="form-control" id="weight"  name="weight">
-    </div>
-    <p>Add More Products +</p>
-</div>
-<div class="form-total"><div class="card"><div class="card-body">
-    <h5>Order Summary</h5>
-    <table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td>Discount</td>
-        <td>6993.0</td>
-      </tr>
-<tr>
-        <td>Taxable Amount</td>
-        <td>198654.0</td>
-      </tr><tr>
-        <td>SGST/td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>CGST</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Grand Total</td>
-        <td>Rs. 19,326.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div></div></div>
-    </div>
-
-    <div class="step2">
-      <div class="form-header">
-            <div class="header-image header-border header-border-active">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Product Details</p>
-            <p class="number">1</p>
-          </div>
-            <div class="header-image header-border">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-              <p>Customer Details</p>
-              <p class="number">2</p>
+         </div>
+         <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="family-review">
+               <div class="phone-call"><img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" width="50" alt="share Now" title="share Now"></div>
+               <div class="family-review-card card">
+                  <div class="review-block card-body">
+                     <p>Share with your family/friends and get their opinion on product in real-time</p>
+                     <section>
+                        <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1604734290/webpage%20project/testimonials-4_e8fqwr.jpg" alt="profile-image">Buy It<a class="text-primary"> @aishwarya </a>awesome product
+                           <a class="all-comments text-right d-block">See all comments</a>
+                        </div>
+                        <div class="add-comment mt-3">
+                           <div>
+                              <div class="comment-input d-flex align-items-center justify-content-between"><input type="text" class="form-control pl-0" placeholder="Reply..." aria-label="Username" aria-describedby="basic-addon1"></div>
+                              <div class="icons p-2">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
+                                    <path d="M12,1.73A10.27,10.27,0,1,0,22.24,12,10.25,10.25,0,0,0,12,1.73ZM21,12a9,9,0,1,1-9-9A9,9,0,0,1,21,12Z"></path>
+                                    <path d="M8.8,11.05a1.55,1.55,0,1,0-1.51-1.5A1.56,1.56,0,0,0,8.8,11.05Z"></path>
+                                    <path d="M15.44,11.05a1.55,1.55,0,1,0,0-3.09,1.53,1.53,0,0,0-1.51,1.59A1.51,1.51,0,0,0,15.44,11.05Z"></path>
+                                    <path d="M12.19,16.35A6.58,6.58,0,0,1,6.9,13.5a5.71,5.71,0,0,0,5.3,4,5.54,5.54,0,0,0,5.31-4A6.27,6.27,0,0,1,12.19,16.35Z"></path>
+                                 </svg>
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
+                                    <path fill="none" stroke="#000" stroke-width="2" d="M22,12 C22,12 19.0000009,15.0000004 13.0000004,21.0000004 C6.99999996,27.0000004 -2.00000007,18.0000004 3.99999994,12.0000004 C9.99999996,6.00000037 9,7.00000011 13,3.00000008 C17,-0.999999955 23,4.99999994 19,9.00000005 C15,13.0000002 12.0000004,16.0000007 9.99999995,18.0000004 C7.99999952,20 5,17 6.99999995,15.0000004 C8.99999991,13.0000007 16,6 16,6"></path>
+                                 </svg>
+                                 <span class="email mx-2">@</span>
+                                 <div class="send">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(20, 198, 218);">
+                                       <line x1="22" y1="2" x2="11" y2="13"></line>
+                                       <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
             </div>
-            <div class="header-image">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Payment Info</p>
-            <p class="number">3</p>
-          </div>
-        </div>
-        <div class="form-body">
-    <div class="form-group">
-      <label for="name">Name :</label>
-      <input type="text" class="form-control" id="name" name="name">
-    </div>
-    <div class="form-group">
-      <label for="email">Email Id :</label>
-      <input type="email" class="form-control" id="email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="contact">Phone No.  :</label>
-      <input type="number" class="form-control" id="contact" name="contact">
-    </div>
-    <div class="form-group">
-      <label for="pan">Pan Or Aadhar :</label>
-      <input type="text" class="form-control" id="pan"  name="pan">
-    </div>
-    <h5>Address Details : </h5>
-    <div class="form-group">
-      <label for="address">Address :</label>
-      <input type="text" class="form-control" id="address"  name="address">
-    </div>
-    <div class="form-group">
-      <label for="city">City :</label>
-      <input type="text" class="form-control" id="city"  name="city">
-    </div>
-    <div class="form-group">
-      <label for="pincode">PIN Code :</label>
-      <input type="text" class="form-control" id="pincode"  name="pincode">
-    </div>
-    <div class="grandTotal"><table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td>Grand Total</td>
-        <td>Rs. 19,326.00</td>
-      </tr></tbody></table></div>
-</div>
-    </div>
-
-    <div class="step3">
-     <div class="form-header">
-            <div class="header-image header-border header-border-active">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Product Details</p>
-            <p class="number">1</p>
-          </div>
-            <div class="header-image header-border header-border-active">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-              <p>Customer Details</p>
-              <p class="number">2</p>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="customer-review">
+               <div class="customer-review-card card">
+                  <div class="review-block card-body">
+                     <p>Reviews from customer who bought it: </p>
+                     <section>
+                        <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/hipster-items-cartoon/512/val71_14-512.png" alt="profile-image">Good One
+                        </div>
+                        <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/hipster-items-cartoon/512/val71_14-512.png" alt="profile-image">Best product
+                           <a class="all-comments text-right d-block">See all comments</a>
+                        </div>
+                        <div class="add-comment mt-3">
+                           <div>
+                              <div class="comment-input d-flex align-items-center justify-content-between"><input type="text" class="form-control pl-0" placeholder="Post A Comment..." aria-label="Username" aria-describedby="basic-addon1"></div>
+                              <div class="icons p-2">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
+                                    <path d="M12,1.73A10.27,10.27,0,1,0,22.24,12,10.25,10.25,0,0,0,12,1.73ZM21,12a9,9,0,1,1-9-9A9,9,0,0,1,21,12Z"></path>
+                                    <path d="M8.8,11.05a1.55,1.55,0,1,0-1.51-1.5A1.56,1.56,0,0,0,8.8,11.05Z"></path>
+                                    <path d="M15.44,11.05a1.55,1.55,0,1,0,0-3.09,1.53,1.53,0,0,0-1.51,1.59A1.51,1.51,0,0,0,15.44,11.05Z"></path>
+                                    <path d="M12.19,16.35A6.58,6.58,0,0,1,6.9,13.5a5.71,5.71,0,0,0,5.3,4,5.54,5.54,0,0,0,5.31-4A6.27,6.27,0,0,1,12.19,16.35Z"></path>
+                                 </svg>
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
+                                    <path fill="none" stroke="#000" stroke-width="2" d="M22,12 C22,12 19.0000009,15.0000004 13.0000004,21.0000004 C6.99999996,27.0000004 -2.00000007,18.0000004 3.99999994,12.0000004 C9.99999996,6.00000037 9,7.00000011 13,3.00000008 C17,-0.999999955 23,4.99999994 19,9.00000005 C15,13.0000002 12.0000004,16.0000007 9.99999995,18.0000004 C7.99999952,20 5,17 6.99999995,15.0000004 C8.99999991,13.0000007 16,6 16,6"></path>
+                                 </svg>
+                                 <span class="email mx-2">@</span>
+                                 <div class="send">
+                                    <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(20, 198, 218);">
+                                       <line x1="22" y1="2" x2="11" y2="13"></line>
+                                       <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                    </svg>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </div>
             </div>
-            <div class="header-image">
-              <img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758203/assets/product_kckqch.svg">
-            <p>Payment Info</p>
-            <p class="number">3</p>
-          </div>
-        </div>
-        <div class="form-body">
-           <p>Choose Payment Method : </p>
-           <div class="card">
-             <table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td><div class="radio">
-  <input type="radio" name="payment-radio">
-</div></td>
-        <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758207/assets/cash-on-delivery_zwk9yl.svg"></td>
-        <td>Cash On Delivery</td>
-      </tr>
-    </tbody></table>
-           </div>
-           <div class="card">
-             <table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td><div class="radio">
-  <input type="radio" name="payment-radio">
-</div></td>
-        <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758205/assets/credit-card-two_anwwkd.svg"></td>
-        <td>Online Banking</td>
-      </tr>
-    </tbody></table>
-           </div>
-           <div class="card">
-             <table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td><div class="radio">
-  <input type="radio" name="payment-radio">
-</div></td>
-        <td><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758201/assets/store-pick_ctxnv5.png"></td>
-        <td>Pickup From Store</td>
-      </tr>
-    </tbody></table>
-           </div>
-        </div>
-        <div class="form-total"><div class="card"><div class="card-body">
-    <h5>Order Summary</h5>
-    <table class="table table-borderless">
-    
-    <tbody>
-      
-<tr>
-        <td>Discount</td>
-        <td>6993.0</td>
-      </tr>
-<tr>
-        <td>Taxable Amount</td>
-        <td>198654.0</td>
-      </tr><tr>
-        <td>SGST/td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>CGST</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>Grand Total</td>
-        <td>Rs. 19,326.00</td>
-      </tr>
-    </tbody>
-  </table>
-</div></div></div>
-    </div>
-
-    <div class="step4">
-      <div><p><img src="https://res.cloudinary.com/dswbxefk3/image/upload/v1621758202/assets/reveived-icon_jjigld.svg"></p><p>Thanks For the confirmation, we have sent payment link to aishwarya@gmail.com</p></div>
-    </div>
-
-    <button id="next" class="btn btn-info">Subit and go to next step</button>
-  </form>
-
-</div>
-
-
-  </div>
-  <div class="row">
-  <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="family-review">
-    <div class="phone-call"><img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" width="50" alt="share Now" title="share Now"></div>
-    <div class="family-review-card card">
-      <div class="review-block card-body">
-        <p>Share with your family/friends and get their opinion on product in real-time</p>
-        <section>
-          <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://res.cloudinary.com/dswbxefk3/image/upload/v1604734290/webpage%20project/testimonials-4_e8fqwr.jpg" alt="profile-image">Buy It<a class="text-primary"> @aishwarya </a>awesome product
-          <a class="all-comments text-right d-block">See all comments</a></div>
-          <div class="add-comment mt-3">
-                                                <div>
-                                                   <div class="comment-input d-flex align-items-center justify-content-between"><input type="text" class="form-control pl-0" placeholder="Reply..." aria-label="Username" aria-describedby="basic-addon1"></div>
-                                                   <div class="icons p-2">
-                                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
-                                                         <path d="M12,1.73A10.27,10.27,0,1,0,22.24,12,10.25,10.25,0,0,0,12,1.73ZM21,12a9,9,0,1,1-9-9A9,9,0,0,1,21,12Z"></path>
-                                                         <path d="M8.8,11.05a1.55,1.55,0,1,0-1.51-1.5A1.56,1.56,0,0,0,8.8,11.05Z"></path>
-                                                         <path d="M15.44,11.05a1.55,1.55,0,1,0,0-3.09,1.53,1.53,0,0,0-1.51,1.59A1.51,1.51,0,0,0,15.44,11.05Z"></path>
-                                                         <path d="M12.19,16.35A6.58,6.58,0,0,1,6.9,13.5a5.71,5.71,0,0,0,5.3,4,5.54,5.54,0,0,0,5.31-4A6.27,6.27,0,0,1,12.19,16.35Z"></path>
-                                                      </svg>
-                                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
-                                                         <path fill="none" stroke="#000" stroke-width="2" d="M22,12 C22,12 19.0000009,15.0000004 13.0000004,21.0000004 C6.99999996,27.0000004 -2.00000007,18.0000004 3.99999994,12.0000004 C9.99999996,6.00000037 9,7.00000011 13,3.00000008 C17,-0.999999955 23,4.99999994 19,9.00000005 C15,13.0000002 12.0000004,16.0000007 9.99999995,18.0000004 C7.99999952,20 5,17 6.99999995,15.0000004 C8.99999991,13.0000007 16,6 16,6"></path>
-                                                      </svg>
-                                                      <span class="email mx-2">@</span>
-                                                      <div class="send">
-                                                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(20, 198, 218);">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                         </svg>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-        </section>
+         </div>
       </div>
-  </div>
-  </div>
-  
-    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="customer-review">
-    <div class="customer-review-card card">
-      <div class="review-block card-body">
-        <p>Reviews from customer who bought it: </p>
-        <section>
-          <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/hipster-items-cartoon/512/val71_14-512.png" alt="profile-image">Good One
-        </div>
-          <div class="ml-2"><img width="30" heigth="30" class="rounded-circle" src="https://cdn4.iconfinder.com/data/icons/hipster-items-cartoon/512/val71_14-512.png" alt="profile-image">Best product
-          <a class="all-comments text-right d-block">See all comments</a></div>
-          <div class="add-comment mt-3">
-                                                <div>
-                                                   <div class="comment-input d-flex align-items-center justify-content-between"><input type="text" class="form-control pl-0" placeholder="Post A Comment..." aria-label="Username" aria-describedby="basic-addon1"></div>
-                                                   <div class="icons p-2">
-                                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
-                                                         <path d="M12,1.73A10.27,10.27,0,1,0,22.24,12,10.25,10.25,0,0,0,12,1.73ZM21,12a9,9,0,1,1-9-9A9,9,0,0,1,21,12Z"></path>
-                                                         <path d="M8.8,11.05a1.55,1.55,0,1,0-1.51-1.5A1.56,1.56,0,0,0,8.8,11.05Z"></path>
-                                                         <path d="M15.44,11.05a1.55,1.55,0,1,0,0-3.09,1.53,1.53,0,0,0-1.51,1.59A1.51,1.51,0,0,0,15.44,11.05Z"></path>
-                                                         <path d="M12.19,16.35A6.58,6.58,0,0,1,6.9,13.5a5.71,5.71,0,0,0,5.3,4,5.54,5.54,0,0,0,5.31-4A6.27,6.27,0,0,1,12.19,16.35Z"></path>
-                                                      </svg>
-                                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(132, 141, 149);">
-                                                         <path fill="none" stroke="#000" stroke-width="2" d="M22,12 C22,12 19.0000009,15.0000004 13.0000004,21.0000004 C6.99999996,27.0000004 -2.00000007,18.0000004 3.99999994,12.0000004 C9.99999996,6.00000037 9,7.00000011 13,3.00000008 C17,-0.999999955 23,4.99999994 19,9.00000005 C15,13.0000002 12.0000004,16.0000007 9.99999995,18.0000004 C7.99999952,20 5,17 6.99999995,15.0000004 C8.99999991,13.0000007 16,6 16,6"></path>
-                                                      </svg>
-                                                      <span class="email mx-2">@</span>
-                                                      <div class="send">
-                                                         <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="mx-3" height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" style="color: rgb(20, 198, 218);">
-                                                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                                                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                                         </svg>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-        </section>
-      </div>
-  </div>
-  </div>
-  
-  
-</div>
-</div>
-
-<footer class="jumbotron text-center footer">
-  <p>Footer</p>
-  <div class="social-links col-sm-12 col-lg-12 col-md-12"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a></div>
-</footer>
-</body>
+      <footer class="jumbotron text-center footer">
+         <p>Footer</p>
+         <div class="social-links col-sm-12 col-lg-12 col-md-12"><a href="#" class="fa fa-facebook"></a><a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </div>
+      </footer>
+   </body>
 </html>
