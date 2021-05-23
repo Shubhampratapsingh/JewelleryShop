@@ -1,0 +1,552 @@
+html {
+  scroll-behavior: smooth;
+}
+.row{
+	margin:30px 0;
+}
+#mainnav img.brand-logo-nav {
+    width:200px;
+}
+#mainnav #collapsibleNavbar{
+	padding-right: 30px;
+    justify-content: flex-end;
+}
+#mainnav{
+  background:linear-gradient(197.61deg,#ec5252,#6e1a52);
+}
+#mainnav a{
+	color: white;
+}
+.top-banner {
+    padding:0 !important;
+    background-color: white;
+}
+.top-banner .banner-img{
+    width:100%;
+}
+.top-banner p.covid-update {
+    color:black;
+    margin-bottom: 0;
+    padding: 5px 0;
+    letter-spacing:1px;
+    font-size:1.1vw;
+}
+.top-banner .image-text{
+    position:relative;
+}
+.top-banner .imageOverlay {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform:uppercase;
+    color:white;
+    width: 100%;
+}
+.top-banner .imageOverlay i{
+    font-size:2rem;
+    color:white;
+}
+.top-banner .imageOverlay h1{
+	font-weight:bold;
+}
+#benefits{
+	display: flex;
+	margin-top: -10%;
+}
+#benefits .benefits-card{
+	position: relative;
+    flex: 1;
+    /* padding: 0 10px; */
+    background-color: white;
+    margin: 0 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#benefits .benefits-card img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#benefits .benefits-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(197.61deg,#ec5252,#6e1a52);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+#benefits .benefits-card:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+#benefits .benefits-card .benefit-text{
+    font-size:2.4vw;
+    padding:30px;
+    text-align:center;
+}
+#benefits .benefits-card .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.product-heading h2{
+	text-align:center;
+    margin:50px;
+    width: 100%;
+}
+.row.product-list {
+    padding:10px;
+}
+.product-list .cart-button{
+    display:none;
+}
+.product-list .card:hover .cart-button{
+    display:block;
+}
+.show-more .show-more-button,
+#open {
+    border-color: #dfdfdf;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 0 52px;
+    min-width: 150px;
+    line-height: 36px;
+    font-size: 14px;
+    margin-right: 8px;
+    margin-bottom: 24px !important;
+    outline: none;
+}
+.show-more .show-more-button:hover{
+    color: white !important;
+    background-color: #0f0f0f;
+}
+.show-more{
+    text-align:center;
+    display:block !important;
+    margin: 50px;
+}
+
+/*#cam{
+	margin:30px;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+*/div#cam,
+#cam #cont,
+#cam .camvideo,
+#cam #vid video,
+#cam #canvas,
+#cam #control {
+    width: 100% !important;
+}
+#cam .row.buttons{
+	justify-content:center;
+	background-color: grey;
+	margin-top: 0;
+}
+#cam #cont{
+  position: relative;
+  height: 100% !important;
+
+}
+/*#cam .camvideo{
+  position: absolute;
+  top:0;
+  left:0;
+
+}*/
+#capture{
+	display: none;
+}
+#cam #control{
+  position:absolute;
+  left:0;
+  z-index: 50;
+  background: grey;
+}
+div#cam #open i{
+    margin:5px;
+    color:white;
+    background-color:green;
+    border-radius:50%;
+    padding:5px;
+
+}
+.cam-open .seller-image{
+    display:block;
+    position:absolute;
+    width: 100px;
+    right: 30px;
+    top: 30px;
+}
+.seller-image,
+.seller-name,
+.caller-name{
+    display:none;
+}
+.cam-open .seller-name{
+    display:block;
+    position: absolute;
+    right: 55px;
+    top: 100px;
+    color: white;
+    text-transform: uppercase;
+}
+.cam-open span.caller-name {
+	display: block;
+    position:absolute;
+    top:30px;
+    color:white;
+    left:30px;
+}
+
+#cam #snap{
+  background-color: dimgray ;
+}
+#cam #retake{
+  background-color: coral ;
+}
+#control{
+	display:none;
+}
+/*#cam #close{
+  background-color: lightcoral ;
+}*/
+#cam .hov{
+  /*opacity:.8;*/
+  transition: all .5s;
+}
+#cam .hov:hover{
+  opacity:1;
+  font-weight: bolder;
+}
+
+.phone-call {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    bottom: 20px;
+    background: #10b418;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 99;
+  display: inline-block;
+}
+
+.phone-call:before {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    top: -15px;
+    left: -15px;
+    background-color: #10b418;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    animation-fill-mode: both;
+    opacity: 0.6;
+    animation: pulse 1.8s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    25% {
+        transform: scale(0.3);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.6);
+        opacity: .6;
+    }
+    75% {
+        transform: scale(0.9);
+        opacity: .3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.rounded-circle {
+    border-radius: 50%!important;
+    background-color:black;
+    border:1px solid red;
+    margin-right:15px;
+}
+a.all-comments:hover {
+    color: #0056b3;
+    cursor:pointer;
+    text-decoration: unset
+}
+.add-comment {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  background-color: rgb(247, 247, 247);
+}
+.add-comment input {
+  background-color: rgb(247, 247, 247) !important;
+}
+.comment-input {
+  border-bottom: 0.4px solid gray;
+}
+.email {
+  font-size: 18px;
+  color: #848d95;
+}
+.icons {
+  text-align: right;
+}
+.send {
+  display: inline;
+}
+.add-comment input::placeholder {
+  color: #585656 !important;
+  font-weight: 600;
+  font-size: 14px;
+}
+.add-comment input {
+  border: none !important;
+}
+.family-review-card.card,
+.customer-review-card ,
+#cam,
+.form-div{
+    box-shadow:10px 10px 5px #aaaaaa;
+}
+.family-review-card.card .review-block,
+.customer-review-card.card .review-block{
+    background: linear-gradient(197.61deg ,#ec5252,#6e1a52);
+    color: white;
+}
+.family-review-card.card p,
+.customer-review-card.card p{
+    color:black;
+    font-weight:bold;
+    text-align: center;
+}
+.family-review-card.card a,
+.customer-review-card.card a{
+    color: white !important;
+    cursor:pointer;
+}
+.form-div .form-logo {
+    width: 30%;
+    display:inline-block;
+}
+.form-div .form-btn{
+    width: 60%;
+    display:inline-block;
+    text-align: right;
+}
+form#product-form {
+    padding:15px;
+}
+#product-form .form-header{
+    display:flex;
+    background-color:#8080802e;
+    padding:15px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+#product-form .form-header .header-image{
+    flex:1;
+    text-align: center;
+}
+#product-form button#next {
+    width:100%;
+}
+.step1 {
+  display: block;
+}
+.header-image .number{
+    border-radius:50%;
+    background-color:white;
+    width:20px;
+    height:20px;
+    text-align:center;
+    margin: auto;
+}
+.header-border{
+    position:relative;
+}
+.header-border:after{
+    content:"";
+    position:absolute;
+    display:block;
+    border:1px solid grey;
+    transform:rotate(90deg);
+    top:10px;
+    right:0;
+    height:130px;
+}
+#product-form .form-control{
+    border:unset;
+    border-bottom:1px solid grey;
+    border-radius:0;
+}
+#product-form label{
+    color:grey;
+    font-size:14px;
+}
+#product-form .form-body{
+    margin:15px 0;
+}
+#product-form .form-body p{
+    color:#23a3e3;
+    font-weight:bold;
+    letter-spacing:1px;
+
+}
+.form-total h5{
+    text-align:center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 15px;
+}
+#form-button{
+	padding:15px;
+}
+.step2 {
+  display: none;
+}
+.grandTotal {
+    background-color:#8080802e;
+    padding:5px;
+}
+form#product-form .step2 .header-border-active p.number{
+    background-color:green;
+    color: white;
+}
+form#product-form .step2 .header-border-active:after{
+    border: 1px solid green;
+}
+.step3 {
+  display: none;
+}
+.step3 td{
+	text-align: center;
+}
+.step3 .form-body .card,
+.step3 .form-body p{
+    margin:15px;
+}
+form#product-form .step3 .header-border-active p.number{
+    background-color:green;
+    color: white;
+}
+form#product-form .step3 .header-border-active:after{
+    border: 1px solid green;
+}
+.step4 {
+  display: none;
+}
+.step4 p{
+    text-align:center;
+    padding:15px;
+}
+.footer{
+	margin:0 !important;
+	padding: 20px !important;
+	margin-top: 30px !important;
+}
+.footer .social-links{
+    text-align:center;
+}
+.footer .social-links .fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.footer .social-links .fa:hover {
+    opacity: 0.7;
+}
+.footer .social-links .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.footer .social-links .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.footer .social-links .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.footer .social-links .fa-instagram {
+  background: #125688;
+  color: white;
+}
+@media screen and (max-width: 1024px) {
+    .form-div{
+        margin-top:30px
+    }
+    .top-banner p.covid-update,
+    #benefits .benefits-card .text{
+        font-size:12px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-image.header-border:after {
+        height: 100px;
+        top: 26px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .header-image.header-border:after {
+        height: 170px;
+        top: -10px;
+    }
+
+}
+@media screen and (max-width: 1199px) {
+    .header-image.header-border:after {
+        height: 100px;
+        top: 26px;
+    }
+
+}
+@media screen and (max-width: 975px) {
+    .header-image.header-border:after {
+        height: 170px;
+        top: -10px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .header-image.header-border:after {
+        height: 120px;
+        top: 15px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .header-image.header-border:after {
+        height: 90px;
+        top: 30px;
+    }
+
+}
