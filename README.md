@@ -1,6 +1,7 @@
 # JewelleryShop
 
 Online Link: https://shubhampratapsingh.github.io/JewelleryShop/
+Video Link showing working: https://www.loom.com/share/dd58025fdf014092b2cc53ac65151321
 
 1. This website aims to offer easy way for buyers to buy gold and diamonds products online.
 On the landing page ,we have shown three products, when you hover over card you can see ' Add To Cart' button, and below cards there is 'see all collection' button.
@@ -15,3 +16,5 @@ Click on any of these buttons to go to next page.
 	2.3= There is 'floating whatsapp icon' where you can share product link with family or friends and they can give their feedback about the product or you can chat with them in real time or even connect them to video call along with the seller. Their message you can see in bottom left card section. No worry of going to market for shopping without family or friends in this lockdown, you can do it online also from any place in the world ( except we cant offer that delicious panipuri online :-) but with all successfull delivery we return you cashback of Rs. 50 for your panipuri).
 
 	2.4= Bottom right card section shows reviews from customer who bought it, you can post your reviews also.
+
+NOTE: Kindly refresh page if you resize and open video call(talk to seller button) as position of buttons are calculating from javascript.
