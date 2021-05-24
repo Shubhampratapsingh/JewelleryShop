@@ -141,6 +141,11 @@ html {
     display:block !important;
     margin: 50px;
 }
+.mapouter,
+.mapouter .gmap_canvas,
+.mapouter iframe{
+    width:100% !important;
+}
 
 /*#cam{
 	margin:30px;
@@ -424,6 +429,9 @@ form#product-form {
     font-weight:bold;
     letter-spacing:1px;
 
+}
+table{
+	margin-bottom:0 !important;
 }
 .form-total h5{
     text-align:center;
